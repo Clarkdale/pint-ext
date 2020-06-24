@@ -1,0 +1,67 @@
+body {
+    border-radius: 3px;
+    background-color: #0A122A;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+.input-wrapper {
+    background-color: #30323D;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    padding: 10px 5px 10px 5px;
+    border-radius: 10px;
+}
+
+.easy_read {
+    background-color: #faf0db;
+    display: block;
+    color: #242729;
+    padding: 12px 8px;
+    width: auto;
+    overflow-x: hidden;
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+    font-size: 13px;
+    border-radius: 10px;
+    border: none;
+}
+
+.easy_read:focus {
+    outline: none;
+}
+
+.easy_read::selection {
+    background: #f9a21e;
+}
+
+@keyframes placeHolderShimmer{
+    0% {
+        background-position: -468px 0
+    }
+    100% {
+        background-position: 468px 0
+    }
+}
+
+.animated_background {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #faf0db;
+    background: linear-gradient(to right, #faf0db 8%, #faf0db85 18%, #faf0db 33%);
+    background-size: 800px 104px;
+    position: relative;
+}
+
+#main_message {
+    color: #faf0db;
+}
