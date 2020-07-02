@@ -1,5 +1,5 @@
 chrome.tabs.query({active: true, currentWindow: true}, tabs => {
-    let url = tabs[0].url;
+    let url = encodeURIComponent(tabs[0].url);
     let theSpan = document.getElementById("retUrl");
     let wrapper = document.getElementById("wrapper_elem");
     fetch("https://smllr.herokuapp.com/addUrl/" + url)
